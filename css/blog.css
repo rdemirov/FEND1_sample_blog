@@ -22,3 +22,14 @@
   font-size: 1.2rem;
   margin: 10px;
 }
+
+#buttons {
+  margin: 15px;
+}
+
+.button {
+  border: none;
+  height: 50px;
+  width: 50px;
+  margin: 15px;
+}
