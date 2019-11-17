@@ -1,0 +1,24 @@
+.blogPost {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #6db1c8;
+  grid-area: content;
+  color: white;
+  border-radius: 10%;
+  padding: 20px;
+}
+
+.blogPost a {
+  text-decoration: none;
+  margin: 15px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.blogPost p {
+  font-size: 1.2rem;
+  margin: 10px;
+}

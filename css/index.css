@@ -1,0 +1,142 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,1fr);
+  grid-template-rows: auto 2.4fr 0.3fr;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+}
+
+.content {
+  grid-area: content;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  border-radius: 10%;
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,1fr);
+    grid-template-rows: auto 2.4fr 0.3fr;
+    grid-template-areas:
+      "header header"
+      "content content"
+      "footer footer";
+  }
+
+  .content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    border-radius: 10%;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,1fr);
+    grid-template-rows: 0.3fr 2.4fr 0.3fr;
+    grid-template-areas:
+      "header header header"
+      ". content content"
+      "footer footer footer";
+  }
+
+  .content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    border-radius: 10%;
+  }
+}
+
+body {
+  margin: 5%;
+  background-color: #fff;
+}
+
+.card a {
+  margin: 5%;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+figure img {
+  border: black 1px solid;
+}
+
+.header {
+  grid-area: header;
+
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px;
+}
+
+.quote {
+  margin-left: auto;
+  margin-right: auto;
+  color: gray;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 300px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10%;
+  width: fit-content;
+  height: 800px;
+  background-image: url("../images/papyrus.jpg");
+  columns: #565655;
+  font-size: 1.2rem;
+}
+
+figcaption {
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+.photo {
+  margin: 10px;
+}
+
+#info {
+  padding: 5%;
+  text-align: center;
+}
+
+#info h3 {
+  margin: 15px;
+}
+
+#buttons {
+  margin: 15px;
+}
+
+.button {
+  border: none;
+  height: 50px;
+  width: 50px;
+  margin: 15px;
+}
